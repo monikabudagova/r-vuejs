@@ -1,5 +1,7 @@
 <template>
-    <h2>главная страница</h2>
+    <article>
+        {{ post.body }}
+    </article>
 </template>
 
 
