@@ -1,10 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 // import ShareView
 </script>
 
 <template>
-  <header class="">
+  <div class="">
+    <header class="">
       <nav>
         <a href="">главная</a>
         <RouterLink to="/">Главная</RouterLink>
@@ -12,13 +13,14 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/blog">Блог</RouterLink>
       </nav>
   </header>
+  </div>
 
   <main>
     <RouterView />
   </main>
 
   <footer>
-  все права защищены &copy; 2024
+  все права защищены &copy; 2024 
 </footer>
 </template>
 
