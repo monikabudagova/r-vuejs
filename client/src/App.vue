@@ -1,20 +1,40 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import ShareView
 </script>
 
 <template>
-  <header>
+  <header class="">
       <nav>
+        <a href="">главная</a>
         <RouterLink to="/">Главная</RouterLink>
         <RouterLink to="/about">Обо мне</RouterLink>
-        <RouterLink to="/about">Блог</RouterLink>
+        <RouterLink to="/blog">Блог</RouterLink>
       </nav>
   </header>
 
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
+
+  <footer>
+  все права защищены &copy; 2024
+</footer>
 </template>
 
-<style scoped>
 
+
+<style scoped>
+  nav{
+
+    background-color: wheat;
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+  nav a:hover{
+    background-color: brown;
+  }
 </style>
